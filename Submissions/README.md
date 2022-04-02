@@ -4,7 +4,13 @@
 The purpose of this analysis was to refactor VBA code to make it more efficient. I measured the performance of the original and refactored codes by recording elapsed run times in excel.
 
 ## Results
-The major difference in the refactored code is the use of arrays to store values and output columns in the spreadsheet. The refactored code is more efficient as it can be executed in less time. 
+The major difference in the refactored code is the use of arrays to store values and output columns in the spreadsheet.
+
+### Screenshot of the code using arrays
+
+<img src="/Resource/use_of_arrays.png" >
+
+The refactored code is more efficient as it can be executed in less time. 
 
 ### The following screenshots show the time elapsed in excel to execute the original code for years 2017 and 2018 respectively
 
