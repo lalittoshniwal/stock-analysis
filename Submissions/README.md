@@ -8,7 +8,7 @@ The major difference in the refactored code is the use of arrays to store values
 
 ### Screenshot of the code using arrays
 
-<img src="/Resource/use_of_arrays.png" >
+<img src="/Resources/use_of_arrays.png" >
 
 The refactored code is more efficient as it can be executed in less time. 
 
