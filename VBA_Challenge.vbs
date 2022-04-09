@@ -53,13 +53,13 @@ Sub AllStocksAnalysisRefactored()
         tickerVolumes(tickerIndex) = 0
                
     Next tickerIndex
+    
+    tickerIndex = 0
            
     ''2b) Loop over all the rows in the spreadsheet.
         
         
         For i = 2 To RowCount
-        
-            For tickerIndex = 0 To 11
             
                 '3a) Increase volume for current ticker
                 If Cells(i, 1).Value = tickers(tickerIndex) Then
@@ -77,12 +77,12 @@ Sub AllStocksAnalysisRefactored()
                 If Cells(i + 1, 1).Value <> tickers(tickerIndex) And Cells(i, 1).Value = tickers(tickerIndex) Then
         
                    endingPrice(tickerIndex) = Cells(i, 6).Value
+                   tickerIndex = tickerIndex + 1
                                   
                End If
                
      'If the next row’s ticker doesn’t match, increase the tickerIndex.
     '3d Increase the tickerIndex.
-           Next tickerIndex
                       
         Next i
                 
